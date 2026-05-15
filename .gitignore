@@ -1,0 +1,9 @@
+.venv
+data/
+Labels/
+new_data/
+temp/
+
+*.zip
+*.pdf
+*.docx
