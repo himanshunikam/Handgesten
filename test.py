@@ -8,7 +8,7 @@ from torchvision.models import mobilenet_v3_small
 from main import R3DClassifier
 # ── Config ────────────────────────────────────────────────────────────────────
 MODEL_PATH     = "exp04_best.pth"
-NUM_FRAMES     = 16        # frames sampled from recording (must match training)
+NUM_FRAMES     = 16         # frames sampled from recording (must match training)
 RECORD_SECONDS = 2.5       # how long to record each gesture
 CAMERA_INDEX   = 0
 
