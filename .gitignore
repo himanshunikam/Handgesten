@@ -3,7 +3,7 @@ data/
 Labels/
 new_data/
 temp/
-
+mp_landmarks/
 *.zip
 *.pdf
 *.docx
