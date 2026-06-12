@@ -4,7 +4,7 @@ import numpy as np
 from main import R3DClassifier
 
 # ── Config ────────────────────────────────────────────────────────────────────
-MODEL_PATH      = "flow_model.pth"
+MODEL_PATH      = "models/model_pretrained_best.pth"
 NUM_FRAMES      = 16       # must match FlowDatensatz training
 RECORD_SECONDS  = 2.5
 CAMERA_INDEX    = 0
@@ -99,7 +99,7 @@ while True:
     if not ret:
         break
 
-    display = frame.copy()
+    display = cv2.flip(frame, 1)
     rgb     = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     h, w    = display.shape[:2]
     now     = cv2.getTickCount() / cv2.getTickFrequency()

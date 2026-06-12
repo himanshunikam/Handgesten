@@ -107,6 +107,7 @@ print("SPACE = start countdown  |  Q = quit")
 with HandLandmarker.create_from_options(mp_options) as landmarker:
     while True:
         ret, frame = cap.read()
+        frame = cv2.flip(frame, 1)
         if not ret:
             break
 
